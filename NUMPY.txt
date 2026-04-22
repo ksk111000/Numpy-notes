@@ -1,0 +1,183 @@
+NUMPY
+NumPy (Numerical Python) is the foundational open-source library for scientific computing in Python. It provides high-performance, multi-dimensional array objects and a massive collection of high-level mathematical functions to operate on these arrays. It is used to create the data in dimension and work with the data which is ready in the form of dimension. 
+
+There are almost 532 built in functions in the python NumPy.
+The main import built in functions which are used to develop the AI is :
+
+
+1)array:
+        NumPy's array() function is a powerful method for creating dimensional arrays from Python data structures. It allows for efficient storage and manipulation of numerical data, making it essential for scientific and mathematical computing.
+whether it is 1d or 2d or 3d.
+
+Ex:a= np.array([20,30,40,50])     
+
+2)NDIM:
+	ndim represents the number of dimensions (axes) of the ndarray. 
+EX:     this is 2-dimensional array [ [3,4,6], [0,8,1]]
+        value of ndim will be 2.  
+
+3)SHAPE: 
+	shape in the numpy is used to tell how many rows and columns in the dimension.
+
+EX:     a=np.array([[11,2,4],[2,3,9],[6,98,23]])
+        size will be (3,3)
+NOTE:   In 1dimension the values passed comes under the rows and there will be no columns.
+
+4)size:
+        Size in the numpy will give the number of elements in the whole dimension.
+
+EX:     a=np.array([[11,2,4],[2,3,9],[6,98,23]])
+        no of elements i.e size of a = 9
+		
+5)ARANGE:
+         arange()` is used to create a sequence of numbers in a specified range. It can define the start, stop (non-    
+         inclusive),and step size for the array values. start (optional) defines the beginning of the interval. Defaults to 0     
+         if not provided.
+
+EX:      a=np.arrange(11,17)
+         output will be [11 12 13 14 15 16]
+NOTE:    It just work like a for loop in the array.
+
+6)ZEROS:
+	 NumPy zeros() `numpy. zeros` is a function in the NumPy library that creates a new array of given shape and type,    
+         filled with zeros. It is widely used for initializing arrays where no initial values are available or needed.
+
+EX :     a=np.zeros((2,3))
+         output:[[0 0 0]
+                 [0 0 0]]
+
+Note:    Default data type of numpy is float 64
+
+
+7)ONES:
+        NumPy ones() `numpy. ones` is a function in the NumPy library that creates a new array of given shape and type,
+         filled with ones. It is widely used for initializing arrays where no initial values are available or needed.
+
+EX :     a=np.zeros((2,3))
+         output:[[1 1 1]
+                 [1 1 1]]
+
+NOTE:    Random is divided into 4 types 1)randint 2)rand 3)randn  4)random
+
+8)RANDINT:
+	    randint()` function is typically used when you need random integers for simulations, testing, or any 
+            scenario requiring randomized data within a set range. low: The lower(inclusive) boundary of the random
+            integers. high: The upper (exclusive) boundary of the random integers. If `high` is None, the range is [0, low).
+
+EX:         val = np.random.randint(0,10) 
+            print(val)
+            output:Anything between 0 to 9
+
+9)RAND:
+          The numpy.random.rand() function creates an array of a specified shape and populates it with random samples from a 
+          uniform distribution over the interval [0, 1).
+
+EX:       a=np.random.rand(2,3)
+          output:[[0.54450456 0.86243887 0.78888639]
+                 [0.13529226 0.3318312  0.26031709]]
+
+10)random:
+            The numpy.random.random() function creates an array of a specified shape and populates it with random samples        
+            from a uniform distribution over the interval [0, 1). [note: same as rand]
+EX:       a=np.random.rand(2,3)
+          output:[[0.54450456 0.86243887 0.78888639]
+                 [0.13529226 0.3318312  0.26031709]]
+
+11)randn:
+           The np.random.randn function generates an array of random numbers sampled from the standard normal distribution,    
+           also known as a Gaussian distribution with a mean of 0 and a variance (and standard deviation) of 1.
+
+EX:        a=np.random.randn(2,3)
+           print(a)
+           output:[[-0.02909401 -0.42581473  1.14337126]
+                   [ 0.71061559 -0.55556031  0.96205333]]
+
+12)RAVEL:
+           In NumPy, ravel() is a function used to "flatten" a multi-dimensional array into a single one-dimensional (1D) 
+           array.
+
+EX:        a=np.array([[1 2 3][4 5 6][7 8 9]])
+           b=np.ravel(b)
+           output:[1 2 3 4 5 6 7 8 9]
+
+13)TRANSPOSE:
+                In NumPy, transposing a matrix swaps its rows and columns. For a 2D array, the element at row i and column j  
+                moves to row j and column i.
+
+
+EX:             a=np.array([[1,2,3],[4,5,6],[7,8,9]])
+                b=np.transpose(b)
+                output:[[1 4 7]
+                        [2 5 8]
+                        [3 6 9]]
+14)CONCATENATE:
+                 In NumPy, concatenation is the process of joining two or more arrays into a single array along a specified  
+                 axis. The primary tool for this operation is the numpy.concatenate() function.
+
+EX:                    a = np.array([1, 2, 3])
+                       b = np.array([4, 5, 6])
+                       result = np.concatenate((a, b))
+                       print(result) 
+                       Output: [1 2 3 4 5 6]
+
+15)Axis = 0:
+                Axis 0 is referring to the rows present in the array. By using this axis 0 we can perform row operations.
+
+EX:           a=np.array([[1,2,3],[4,5,6],[7,8,9]])
+              np.sum(a,axis=0)
+              output:[12 15 18]
+
+16)AXIS = 1:
+              Axis 1 is referring to the coloumns present in the array. By using this axis 1 we can perform columns  
+              operations.
+
+EX:           a=np.array([[1,2,3],[4,5,6],[7,8,9]])
+              np.sum(a,axis=1)
+              output:[ 6 15 24]
+
+17)ARGMAX:
+             argmax is a function that returns the indices (position) of the maximum values in an array, rather than the 
+             values themselves. It is a fundamental tool for identifying the "where" instead of the "what."
+
+EX:                a=np.array([[1,2,3],[4,5,6],[7,8,9]])
+                   b=np.argmax(a)
+                   print(b)
+
+                   output:8
+
+18)ARGMIN:
+             argmin is a function that returns the indices (position) of the manimum values in an array, rather than the
+             values themselves. It is a fundamental tool for identifying the "where" instead of the "what."
+
+EX:                a=np.array([[1,2,3],[4,5,6],[7,8,9]])
+                   b=np.argmin(a)
+                   print(b)
+
+                   output:0
+
+19)MATMUL:
+            Matrix multiplication in NumPy is used when you need to perform dot product operations between two matrices   
+            or a matrix and a vector. The numpy. matmul() can be used for this purpose.
+
+EX:         a=np.array([1,2],[3,4])
+            b=np.array([5,6],[7,8])
+            c=np.matmul(a,b)
+                  
+            output:[[19 22]
+                    [43 50]]
+
+20)DIAGONAL:
+               Diagonal is a built in function which is used to extract the diagonal elements of an given array.
+ 
+EX:                a=np.array([[1,2,3],[4,5,6],[7,8,9]])
+                   b=np.diagonal(a)
+                      
+                   output:[1 5 9]
+
+
+
+
+
+
+               
+
