@@ -45,25 +45,27 @@ argmax()
 argmin()
 matmul()
 diagonal()
+
 🛠 Technologies Used
 Python
 NumPy
+
 ▶️ Getting Started
 1️⃣ Install NumPy
 pip install numpy
 2️⃣ Import NumPy
 import numpy as np
+
 📖 Example
 import numpy as np
-
 a = np.array([[1,2,3],
               [4,5,6]])
-
 print(a.shape)
 print(a.ndim)
 Output
 (2, 3)
 2
+
 🎯 Purpose of This Repository
 
 This repository is created for:
