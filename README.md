@@ -51,8 +51,10 @@ Python
 NumPy
 
 ▶️ Getting Started
+
 1️⃣ Install NumPy
 pip install numpy
+
 2️⃣ Import NumPy
 import numpy as np
 
@@ -71,9 +73,13 @@ Output
 This repository is created for:
 
 Learning NumPy step by step
+
 Practicing important NumPy functions
+
 Preparing for Data Analyst interviews
+
 Building a strong foundation in Python for AI/ML
+
 📂 Repository Structure
 NUMPY/
 │── NUMPY.txt
@@ -82,3 +88,7 @@ NUMPY/
 👨‍💻 Author
 
 Sarath kumar kanchipati
+
+Electronics & Communication Engineering Graduate
+Aspiring Data Analyst
+Skilled in Python, SQL, Tableau, and Machine Learning
