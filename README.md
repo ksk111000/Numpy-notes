@@ -90,5 +90,7 @@ NUMPY/
 Sarath kumar kanchipati
 
 Electronics & Communication Engineering Graduate
+
 Aspiring Data Analyst
+
 Skilled in Python, SQL, Tableau, and Machine Learning
